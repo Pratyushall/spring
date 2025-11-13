@@ -1,5 +1,7 @@
 "use client";
 
+console.log("[v0] HomePage component rendering");
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ServiceCard } from "@/components/service-card";
@@ -8,17 +10,20 @@ import { ContactForm } from "@/components/contact-form";
 import Link from "next/link";
 
 export default function HomePage() {
+  console.log("[v0] HomePage function executed");
+
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-balance font-(family-name:--font-crimson) leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-balance font-[family-name:var(--font-crimson)] leading-tight">
             Aesthetic websites & branding for cafés, architects and studios
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 sm:mb-10 text-pretty max-w-2xl mx-auto leading-relaxed">
-            A studio mixing clean code and visual storytelling. Creating calm,
-            beautiful digital spaces for creative brands in India.
+            A one-woman studio mixing clean code and visual storytelling.
+            Creating calm, beautiful digital spaces for creative brands in
+            India.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button
@@ -46,7 +51,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center font-(family-name:--font-crimson)">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center font-[family-name:var(--font-crimson)]">
           What SpringMonsoon does
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
@@ -76,7 +81,7 @@ export default function HomePage() {
       {/* Selected Work Preview */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-(family-name:--font-crimson)">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-[family-name:var(--font-crimson)]">
             Selected work
           </h2>
           <Button
@@ -107,7 +112,7 @@ export default function HomePage() {
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <Card className="max-w-4xl mx-auto bg-card/50 backdrop-blur-sm border-border">
           <CardContent className="p-6 sm:p-8 md:p-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 font-(family-name:--font-crimson)">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 font-[family-name:var(--font-crimson)]">
               Why SpringMonsoon
             </h2>
             <div className="space-y-4 sm:space-y-5 text-muted-foreground mb-6 sm:mb-8 text-base sm:text-lg">
@@ -162,7 +167,7 @@ export default function HomePage() {
         className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20"
       >
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-balance font-(family-name:--font-crimson)">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-balance font-[family-name:var(--font-crimson)]">
             Have a café, studio or brand that needs a calmer, prettier internet
             home?
           </h2>
