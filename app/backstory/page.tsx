@@ -170,8 +170,7 @@ export default function BackstoryPage() {
               ))}
             </div>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic">
-              "Every project is a conversation. I listen first, then design with
-              intention."
+              Every project is a conversation.
             </p>
           </div>
         </section>
