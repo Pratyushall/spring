@@ -2,12 +2,11 @@
 "use client";
 
 import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/cn";
+import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  // Base
+  // Base styles
   "inline-flex items-center justify-center gap-2 rounded-xl border text-sm font-medium transition-all " +
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 " +
     "disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.98]",
@@ -54,6 +53,7 @@ const buttonVariants = cva(
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
+  // we'll just ignore asChild if it's passed, to avoid runtime issues
   asChild?: boolean;
   loading?: boolean;
   leftIcon?: React.ReactNode;
@@ -67,7 +67,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       variant,
       size,
       elevation,
-      asChild = false,
       loading = false,
       leftIcon,
       rightIcon,
@@ -77,11 +76,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const Comp = asChild ? Slot : "button";
     const isDisabled = disabled || loading;
 
     return (
-      <Comp
+      <button
         ref={ref}
         className={cn(
           buttonVariants({
@@ -108,7 +106,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
         {/* Right icon */}
         {!loading && rightIcon}
-      </Comp>
+      </button>
     );
   }
 );

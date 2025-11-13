@@ -1,22 +1,25 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Geist, Cormorant_Garamond } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import { Outfit, Crimson_Text } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { Header } from "@/components/header";
+import { SpringMonsoonBackground } from "@/components/spring-monsoon-background";
+import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-const cormorant = Cormorant_Garamond({
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
+const crimsonText = Crimson_Text({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  variable: "--font-serif",
+  weight: ["400", "600", "700"],
+  variable: "--font-crimson",
 });
 
 export const metadata: Metadata = {
-  title: "SpringMonsoon — Small, beautiful web experiences",
-  description: "Luxury minimal web developer portfolio",
-  generator: "v0.app",
+  title: "SpringMonsoon | Aesthetic Web Design & Branding for Creative Studios",
+  description:
+    "A one-woman studio creating aesthetic websites, logos, and branding for cafés, architects, interior designers, and boutique studios in India.",
+  keywords:
+    "web design, branding, logo design, café websites, architect websites, interior designer websites, Hyderabad, India",
 };
 
 export default function RootLayout({
@@ -25,12 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geist.variable} ${cormorant.variable} font-sans antialiased`}
-      >
-        <Header />
-        <div className="pb-20">{children}</div>
+    <html lang="en" className={`${outfit.variable} ${crimsonText.variable}`}>
+      <body className="font-sans antialiased">
+        <SpringMonsoonBackground />
+        <Navigation />
+        <main className="relative z-10">{children}</main>
         <Footer />
         <Analytics />
       </body>
