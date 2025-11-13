@@ -17,7 +17,7 @@ const crimsonText = Crimson_Text({
 export const metadata: Metadata = {
   title: "SpringMonsoon | Aesthetic Web Design & Branding for Creative Studios",
   description:
-    "A one-woman studio creating aesthetic websites, logos, and branding for cafés, architects, interior designers, and boutique studios in India.",
+    "A studio creating aesthetic websites, logos, and branding for cafés, architects, interior designers, and boutique studios in India.",
   keywords:
     "web design, branding, logo design, café websites, architect websites, interior designer websites, Hyderabad, India",
 };

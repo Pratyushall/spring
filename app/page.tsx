@@ -21,9 +21,8 @@ export default function HomePage() {
             Aesthetic websites & branding for cafés, architects and studios
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 sm:mb-10 text-pretty max-w-2xl mx-auto leading-relaxed">
-            A one-woman studio mixing clean code and visual storytelling.
-            Creating calm, beautiful digital spaces for creative brands in
-            India.
+            A studio mixing clean code and visual storytelling. Creating calm,
+            beautiful digital spaces for creative brands in India.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button
