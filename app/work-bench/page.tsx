@@ -104,7 +104,7 @@ export default function WorkBenchPage() {
     <div className="min-h-screen pt-24">
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 text-center font-[family-name:var(--font-crimson)]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 text-center font-(family-name:--font-crimson)">
             Work Bench
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground text-center mb-12 sm:mb-16 max-w-2xl mx-auto leading-relaxed">
@@ -128,7 +128,7 @@ export default function WorkBenchPage() {
                   />
                 </div>
                 <CardContent className="p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 group-hover:text-primary transition-colors font-[family-name:var(--font-crimson)]">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2 group-hover:text-primary transition-colors font-(family-name:--font-crimson)">
                     {project.title}
                   </h3>
                   <p className="text-base text-muted-foreground mb-3">
@@ -156,7 +156,7 @@ export default function WorkBenchPage() {
           {selectedProject && (
             <>
               <DialogHeader>
-                <DialogTitle className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-crimson)]">
+                <DialogTitle className="text-3xl sm:text-4xl font-bold font-(family-name:--font-crimson)">
                   {selectedProject.title}
                 </DialogTitle>
                 <DialogDescription className="text-base sm:text-lg">

@@ -57,7 +57,7 @@ export function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Project Type Selection */}
           <div>
-            <label className="text-xl sm:text-2xl font-semibold mb-4 block font-[family-name:var(--font-crimson)]">
+            <label className="text-xl sm:text-2xl font-semibold mb-4 block font-(family-name:--font-crimson)">
               What are you looking for?
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -80,7 +80,7 @@ export function ContactForm() {
 
           {/* Budget Range */}
           <div>
-            <label className="text-xl sm:text-2xl font-semibold mb-4 block font-[family-name:var(--font-crimson)]">
+            <label className="text-xl sm:text-2xl font-semibold mb-4 block font-(family-name:--font-crimson)">
               What's your budget range?
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">

@@ -10,7 +10,7 @@ export default function BackstoryPage() {
         {/* Intro Section */}
         <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 sm:mb-12 text-center font-[family-name:var(--font-crimson)]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 sm:mb-12 text-center font-(family-name:--font-crimson)">
               The story behind SpringMonsoon
             </h1>
 
@@ -50,7 +50,7 @@ export default function BackstoryPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-card/50 backdrop-blur-sm border-border">
               <CardContent className="p-6 sm:p-8 md:p-12">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 font-[family-name:var(--font-crimson)]">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 font-(family-name:--font-crimson)">
                   Who I work with
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 text-muted-foreground text-base sm:text-lg">
@@ -95,7 +95,7 @@ export default function BackstoryPage() {
         {/* How I Work */}
         <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center font-[family-name:var(--font-crimson)]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center font-(family-name:--font-crimson)">
               How I work
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -130,7 +130,7 @@ export default function BackstoryPage() {
                   className="bg-card/50 backdrop-blur-sm border-border"
                 >
                   <CardContent className="p-5 sm:p-6">
-                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-3 sm:mb-4 font-[family-name:var(--font-crimson)]">
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-3 sm:mb-4 font-(family-name:--font-crimson)">
                       {item.step}
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-foreground">
@@ -149,7 +149,7 @@ export default function BackstoryPage() {
         {/* Values */}
         <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 font-[family-name:var(--font-crimson)]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 font-(family-name:--font-crimson)">
               Core values
             </h2>
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
